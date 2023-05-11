@@ -39,8 +39,10 @@
             this.LblHearts = new System.Windows.Forms.Label();
             this.LblRupees = new System.Windows.Forms.Label();
             this.TabSwords = new System.Windows.Forms.TabPage();
+            this.LblSwordSlot5 = new System.Windows.Forms.Label();
             this.LblSwordSlot4 = new System.Windows.Forms.Label();
             this.LblSwordSlot3 = new System.Windows.Forms.Label();
+            this.ComboSwordSlot5 = new System.Windows.Forms.ComboBox();
             this.ComboSwordSlot4 = new System.Windows.Forms.ComboBox();
             this.ComboSwordSlot3 = new System.Windows.Forms.ComboBox();
             this.ComboSwordSlot2 = new System.Windows.Forms.ComboBox();
@@ -235,8 +237,10 @@
             // 
             this.TabSwords.Controls.Add(this.InputSwordPouch);
             this.TabSwords.Controls.Add(this.LblSwordPouch);
+            this.TabSwords.Controls.Add(this.LblSwordSlot5);
             this.TabSwords.Controls.Add(this.LblSwordSlot4);
             this.TabSwords.Controls.Add(this.LblSwordSlot3);
+            this.TabSwords.Controls.Add(this.ComboSwordSlot5);
             this.TabSwords.Controls.Add(this.ComboSwordSlot4);
             this.TabSwords.Controls.Add(this.ComboSwordSlot3);
             this.TabSwords.Controls.Add(this.ComboSwordSlot2);
@@ -253,6 +257,14 @@
             this.TabSwords.Text = "Swords";
             this.TabSwords.UseVisualStyleBackColor = true;
             // 
+            // LblSwordSlot5
+            // 
+            this.LblSwordSlot5.AutoSize = true;
+            this.LblSwordSlot5.Location = new System.Drawing.Point(11, 151);
+            this.LblSwordSlot5.Name = "LblSwordSlot4";
+            this.LblSwordSlot5.Size = new System.Drawing.Size(34, 13);
+            this.LblSwordSlot5.TabIndex = 10;
+            this.LblSwordSlot5.Text = "Slot 5";
             // LblSwordSlot4
             // 
             this.LblSwordSlot4.AutoSize = true;
@@ -271,7 +283,14 @@
             this.LblSwordSlot3.TabIndex = 9;
             this.LblSwordSlot3.Text = "Slot 4";
             // 
-            // ComboSwordSlot4
+            // ComboSwordSlot5
+            // 
+            this.ComboSwordSlot5.FormattingEnabled = true;
+            this.ComboSwordSlot5.Location = new System.Drawing.Point(51, 151);
+            this.ComboSwordSlot5.Name = "ComboSwordSlot4";
+            this.ComboSwordSlot5.Size = new System.Drawing.Size(250, 21);
+            this.ComboSwordSlot5.TabIndex = 8;
+            // ComboSwordSlot5
             // 
             this.ComboSwordSlot4.FormattingEnabled = true;
             this.ComboSwordSlot4.Location = new System.Drawing.Point(51, 121);
