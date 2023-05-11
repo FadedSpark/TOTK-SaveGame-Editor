@@ -69,6 +69,7 @@ namespace TOTK_SaveGame_Editor
             ComboSwordSlot2.Items.AddRange(GameData.Swords.Select(item => item.Name).ToArray());
             ComboSwordSlot3.Items.AddRange(GameData.Swords.Select(item => item.Name).ToArray());
             ComboSwordSlot4.Items.AddRange(GameData.Swords.Select(item => item.Name).ToArray());
+            ComboSwordSlot5.Items.AddRange(GameData.Swords.Select(item => item.Name).ToArray());
 
             ComboBowSlot0.Items.AddRange(GameData.Bows.Select(item => item.Name).ToArray());
             ComboBowSlot1.Items.AddRange(GameData.Bows.Select(item => item.Name).ToArray());
@@ -104,6 +105,7 @@ namespace TOTK_SaveGame_Editor
             SetComboIndex(GameData.Swords, _SaveFile.ReadSword(2), ComboSwordSlot2);
             SetComboIndex(GameData.Swords, _SaveFile.ReadSword(3), ComboSwordSlot3);
             SetComboIndex(GameData.Swords, _SaveFile.ReadSword(4), ComboSwordSlot4);
+            SetComboIndex(GameData.Swords, _SaveFile.ReadSword(5), ComboSwordSlot5);
 
             SetComboIndex(GameData.Bows, _SaveFile.ReadBow(0), ComboBowSlot0);
             SetComboIndex(GameData.Bows, _SaveFile.ReadBow(1), ComboBowSlot1);
@@ -145,6 +147,7 @@ namespace TOTK_SaveGame_Editor
             _SaveFile.WriteSword(2, GameData.Swords[ComboSwordSlot2.SelectedIndex]);
             _SaveFile.WriteSword(3, GameData.Swords[ComboSwordSlot3.SelectedIndex]);
             _SaveFile.WriteSword(4, GameData.Swords[ComboSwordSlot4.SelectedIndex]);
+            _SaveFile.WriteSword(5, GameData.Swords[ComboSwordSlot5.SelectedIndex]);
 
             _SaveFile.WriteBow(0, GameData.Bows[ComboBowSlot0.SelectedIndex]);
             _SaveFile.WriteBow(1, GameData.Bows[ComboBowSlot1.SelectedIndex]);
